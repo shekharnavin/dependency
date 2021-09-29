@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:03:24 IST 2021
+log4j-slf4j-impl-2.12.1.pom>allegis-framework=
+log4j-slf4j-impl-2.12.1.jar>allegis-framework=
+log4j-slf4j-impl-2.12.1-sources.jar>allegis-framework=

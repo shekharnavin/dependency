@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:03:27 IST 2021
+org.eclipse.persistence.asm-2.5.0.jar>allegis-framework=
+org.eclipse.persistence.asm-2.5.0-sources.jar>allegis-framework=
+org.eclipse.persistence.asm-2.5.0.pom>allegis-framework=

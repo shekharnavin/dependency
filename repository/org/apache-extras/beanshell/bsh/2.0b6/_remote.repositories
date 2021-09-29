@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:38 IST 2021
+bsh-2.0b6-sources.jar>allegis-framework=
+bsh-2.0b6.jar>allegis-framework=
+bsh-2.0b6.pom>allegis-framework=

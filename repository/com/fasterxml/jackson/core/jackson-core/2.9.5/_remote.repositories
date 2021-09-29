@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:17 IST 2021
+jackson-core-2.9.5-sources.jar>allegis-framework=
+jackson-core-2.9.5.jar>allegis-framework=
+jackson-core-2.9.5.pom>allegis-framework=

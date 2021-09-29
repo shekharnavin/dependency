@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:09 IST 2021
+annotations-4.1.1.4-sources.jar>allegis-framework=
+annotations-4.1.1.4.jar>allegis-framework=
+annotations-4.1.1.4.pom>allegis-framework=

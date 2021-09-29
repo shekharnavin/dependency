@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:49 IST 2021
+codemodel-2.6.jar>allegis-framework=
+codemodel-2.6-sources.jar>allegis-framework=
+codemodel-2.6.pom>allegis-framework=

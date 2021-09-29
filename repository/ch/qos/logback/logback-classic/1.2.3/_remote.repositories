@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:13 IST 2021
+logback-classic-1.2.3-sources.jar>allegis-framework=
+logback-classic-1.2.3.jar>allegis-framework=
+logback-classic-1.2.3.pom>allegis-framework=

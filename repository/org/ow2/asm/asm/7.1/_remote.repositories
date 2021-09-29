@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:03:31 IST 2021
+asm-7.1.pom>allegis-framework=
+asm-7.1.jar>allegis-framework=
+asm-7.1-sources.jar>allegis-framework=

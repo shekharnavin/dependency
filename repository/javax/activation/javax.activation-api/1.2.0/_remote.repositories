@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:03:08 IST 2021
+javax.activation-api-1.2.0-sources.jar>allegis-framework=
+javax.activation-api-1.2.0.pom>allegis-framework=
+javax.activation-api-1.2.0.jar>allegis-framework=

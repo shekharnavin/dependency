@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.scilab.forge</groupId>
+  <artifactId>jlatexmath</artifactId>
+  <version>1.0.4</version>
+  <packaging>jar</packaging>
+
+  <name>jlatexmath</name>
+  <description>
+    JLaTeXMath is a Java library. Its main purpose is to display mathematical formulas
+    written in LaTeX. JLaTeXMath is the best Java library to display LaTeX code.
+  </description>
+  <url>http://github.com/opencollab/jlatexmath</url>
+
+  <licenses>
+    <license>
+      <name>GNU General Public License, version 2</name>
+      <url>https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>denizet</id>
+      <name>Calixte Denizet</name>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/opencollab/jlatexmath.git</connection>
+    <developerConnection>scm:git:ssh://github.com:opencollab/jlatexmath.git</developerConnection>
+    <url>http://github.com/opencollab/jlatexmath/tree/master</url>
+   </scm>
+</project>

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:04 IST 2021
+google-api-client-1.30.7.pom>allegis-framework=
+google-api-client-1.30.7.jar>allegis-framework=
+google-api-client-1.30.7-sources.jar>allegis-framework=

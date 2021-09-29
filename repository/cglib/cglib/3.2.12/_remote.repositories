@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:03:31 IST 2021
+cglib-3.2.12-sources.jar>allegis-framework=
+cglib-3.2.12.pom>allegis-framework=
+cglib-3.2.12.jar>allegis-framework=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:03:25 IST 2021
+opencsv-5.3-sources.jar>allegis-framework=
+opencsv-5.3.pom>allegis-framework=
+opencsv-5.3.jar>allegis-framework=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:45 IST 2021
+qdox-1.12.1-sources.jar>allegis-framework=
+qdox-1.12.1.jar>allegis-framework=
+qdox-1.12.1.pom>allegis-framework=

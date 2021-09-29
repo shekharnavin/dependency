@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:49 IST 2021
+jackson-dataformat-yaml-2.9.7-sources.jar>allegis-framework=
+jackson-dataformat-yaml-2.9.7.jar>allegis-framework=
+jackson-dataformat-yaml-2.9.7.pom>allegis-framework=

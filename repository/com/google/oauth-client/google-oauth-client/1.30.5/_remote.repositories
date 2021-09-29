@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:04 IST 2021
+google-oauth-client-1.30.5.pom>allegis-framework=
+google-oauth-client-1.30.5-sources.jar>allegis-framework=
+google-oauth-client-1.30.5.jar>allegis-framework=

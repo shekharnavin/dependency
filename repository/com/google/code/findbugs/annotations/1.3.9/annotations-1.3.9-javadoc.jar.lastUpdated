@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:03:33 IST 2021
+https\://repo.maven.apache.org/maven2/.lastUpdated=1632821613502
+http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-snapshot/.lastUpdated=1632821613471
+http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-release/.error=
+http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-snapshot/.error=
+https\://repo.maven.apache.org/maven2/.error=
+http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-release/.lastUpdated=1632821613445

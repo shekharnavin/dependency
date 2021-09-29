@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 16:18:43 IST 2021
+adapter-rxjava-2.4.0.jar>central=
+adapter-rxjava-2.4.0.pom>central=
+adapter-rxjava-2.4.0-sources.jar>central=

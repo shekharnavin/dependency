@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:45 IST 2021
+jline-2.14.6.jar>allegis-framework=
+jline-2.14.6-sources.jar>allegis-framework=
+jline-2.14.6.pom>allegis-framework=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:38 IST 2021
+junit-4.12-sources.jar>allegis-framework=
+junit-4.12.pom>allegis-framework=
+junit-4.12.jar>allegis-framework=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:03:24 IST 2021
+spring-boot-2.2.13.RELEASE.pom>allegis-framework=
+spring-boot-2.2.13.RELEASE.jar>allegis-framework=
+spring-boot-2.2.13.RELEASE-sources.jar>allegis-framework=

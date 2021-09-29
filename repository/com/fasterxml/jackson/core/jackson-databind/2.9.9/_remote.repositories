@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:31 IST 2021
+jackson-databind-2.9.9.jar>allegis-framework=
+jackson-databind-2.9.9-sources.jar>allegis-framework=
+jackson-databind-2.9.9.pom>allegis-framework=

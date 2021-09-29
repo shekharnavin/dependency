@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:34 IST 2021
+animal-sniffer-annotations-1.14.jar>allegis-framework=
+animal-sniffer-annotations-1.14-sources.jar>allegis-framework=
+animal-sniffer-annotations-1.14.pom>allegis-framework=

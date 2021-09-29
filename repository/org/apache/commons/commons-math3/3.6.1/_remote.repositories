@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:54 IST 2021
+commons-math3-3.6.1.jar>allegis-framework=
+commons-math3-3.6.1-sources.jar>allegis-framework=
+commons-math3-3.6.1.pom>allegis-framework=

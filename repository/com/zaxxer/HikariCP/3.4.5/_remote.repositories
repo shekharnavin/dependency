@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:03:12 IST 2021
+HikariCP-3.4.5-sources.jar>allegis-framework=
+HikariCP-3.4.5.pom>allegis-framework=
+HikariCP-3.4.5.jar>allegis-framework=

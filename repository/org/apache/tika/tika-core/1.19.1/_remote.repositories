@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:40 IST 2021
+tika-core-1.19.1.pom>allegis-framework=
+tika-core-1.19.1.jar>allegis-framework=
+tika-core-1.19.1-sources.jar>allegis-framework=

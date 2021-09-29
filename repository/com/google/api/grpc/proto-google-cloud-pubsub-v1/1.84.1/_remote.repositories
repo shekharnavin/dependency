@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:12 IST 2021
+proto-google-cloud-pubsub-v1-1.84.1-sources.jar>allegis-framework=
+proto-google-cloud-pubsub-v1-1.84.1.pom>allegis-framework=
+proto-google-cloud-pubsub-v1-1.84.1.jar>allegis-framework=

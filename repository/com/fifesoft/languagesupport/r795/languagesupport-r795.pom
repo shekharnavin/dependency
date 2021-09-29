@@ -1,0 +1,89 @@
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent> 
+		<groupId>com.fifesoft</groupId> 
+		<artifactId>rtext-root-pom</artifactId> 
+		<version>3</version> 
+		<relativePath>../../pom.xml</relativePath> 
+	</parent> 
+
+	<groupId>com.fifesoft</groupId>
+	<artifactId>languagesupport</artifactId>
+	<version>r795</version>
+	<packaging>jar</packaging>
+	<name>LanguageSupport</name>
+	<description>
+		This library provides customizations to rtext to handle various languages.
+  	</description>
+	<inceptionYear>2003</inceptionYear>
+	<url>http://www.fifesoft.com/rsyntaxtextarea/</url>
+	<licenses>
+		<license>
+			<name>GNU Lesser General Public License</name>
+			<url>http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<scm>
+		<url>http://svn.fifesoft.com/viewvc-1.0.5/bin/cgi/viewvc.cgi/RSyntaxTextArea/?root=RSyntaxTextArea</url>
+		<connection>http://svn.fifesoft.com/svn/RSyntaxTextArea/RSyntaxTextArea/</connection>
+	</scm>
+	<developers>
+		<developer>
+			<name>Robert Futrell</name>
+			<url>http://www.fifesoft.com</url>
+		</developer>
+	</developers>
+	<dependencies>
+		<dependency>
+			<groupId>com.fifesoft</groupId>
+			<artifactId>autocomplete</artifactId>
+			<version>2.0.7</version>
+		</dependency>
+        <dependency>
+                <groupId>com.fifesoft</groupId>
+                <artifactId>rsyntaxtextarea</artifactId>
+                <version>2.0.7</version>
+        </dependency>
+		<dependency>
+			<groupId>org.mozilla</groupId>
+			<artifactId>rhino</artifactId>
+			<version>1.7R4</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit-version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+				<!-- We need to use 1.5 here, because the rhino dependency was compiled with 1.5 -->
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${compiler-plugin-version}</version>
+					<executions>
+						<execution>
+							<id>default-compile</id>
+							<configuration>
+								<fork>true</fork>
+								<executable>${javac16-compiler-executable}</executable>
+								<compilerVersion>1.6</compilerVersion>
+								<source>1.5</source>
+								<target>1.5</target>
+							</configuration>
+							<goals>
+								<goal>compile</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>	
+		</plugins>
+	</build>
+</project>
+

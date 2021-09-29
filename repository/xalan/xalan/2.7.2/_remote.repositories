@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:20 IST 2021
+xalan-2.7.2.jar>allegis-framework=
+xalan-2.7.2-sources.jar>allegis-framework=
+xalan-2.7.2.pom>allegis-framework=

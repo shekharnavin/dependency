@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:03:28 IST 2021
+javassist-3.24.0-GA.pom>allegis-framework=
+javassist-3.24.0-GA-sources.jar>allegis-framework=
+javassist-3.24.0-GA.jar>allegis-framework=

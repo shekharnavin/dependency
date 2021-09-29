@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:51 IST 2021
+snakeyaml-1.23.pom>allegis-framework=
+snakeyaml-1.23.jar>allegis-framework=
+snakeyaml-1.23-sources.jar>allegis-framework=

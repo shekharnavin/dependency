@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 16:19:46 IST 2021
+ab35631e21212a99a19ae016b5b061574c04b977@default-allegis-framework-http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-release/.lastUpdated=1632826184822
+https\://repo.maven.apache.org/maven2/.lastUpdated=1632826186122
+http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-release/.error=Could not transfer artifact org.codehaus.jackson\:jackson-core-asl\:jar\:sources\:1.8.5 from/to allegis-framework (http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-release)\: jira-tst-node01.allegistest.com
+ab35631e21212a99a19ae016b5b061574c04b977@default-snapshots-http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-snapshot/.lastUpdated=1632826184824
+http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-snapshot/.error=Could not transfer artifact org.codehaus.jackson\:jackson-core-asl\:jar\:sources\:1.8.5 from/to snapshots (http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-snapshot)\: jira-tst-node01.allegistest.com

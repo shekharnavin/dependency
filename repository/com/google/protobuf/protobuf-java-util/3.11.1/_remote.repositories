@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:07 IST 2021
+protobuf-java-util-3.11.1.jar>allegis-framework=
+protobuf-java-util-3.11.1.pom>allegis-framework=
+protobuf-java-util-3.11.1-sources.jar>allegis-framework=

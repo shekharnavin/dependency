@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:26 IST 2021
+languagesupport-r795-sources.jar>allegis-framework=
+languagesupport-r795.jar>allegis-framework=
+languagesupport-r795.pom>allegis-framework=

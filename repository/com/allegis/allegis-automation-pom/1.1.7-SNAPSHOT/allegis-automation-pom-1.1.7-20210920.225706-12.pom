@@ -1,0 +1,356 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>allegis-automation-pom</artifactId>
+	<version>1.1.7-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Allegis Automation Client POM</name>
+	<description>Base POM for projects that are to use the automation framework</description>
+
+	<parent>
+		<groupId>com.allegis</groupId>
+		<artifactId>allegis-automation-base</artifactId>
+		<version>1.0.16-SNAPSHOT</version>
+	</parent>
+
+	<scm>
+		<developerConnection>scm:git:git@bitbucket.org:allegisqa/allegis-automation-pom.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.allegis</groupId>
+			<artifactId>seleniumFramework</artifactId>
+		</dependency>
+
+		<!-- Start Selenium requirements -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>htmlunit-driver</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- End Selenium requirements -->
+		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.saucelabs</groupId>
+			<artifactId>sauce_java_common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.saucelabs</groupId>
+			<artifactId>sauce_junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.saucelabs</groupId>
+			<artifactId>sauce_testng</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.saucelabs.selenium</groupId>
+			<artifactId>sauce-ondemand-driver</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.saucelabs.selenium</groupId>
+			<artifactId>selenium-client-factory</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.saucelabs</groupId>
+			<artifactId>saucerest</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+		<!-- End Sauce Labs requirements -->
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.htmlunit</groupId>
+			<artifactId>htmlunit-core-js</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sourceforge.htmlunit</groupId>
+			<artifactId>htmlunit</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- End HTML Unit Driver requirements -->
+
+		<dependency>
+			<groupId>net.sourceforge.jexcelapi</groupId>
+			<artifactId>jxl</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>rest-assured</artifactId>
+		</dependency>
+		<!-- End REST Core requirements -->
+
+		<!-- Start Soap Core requirements -->
+		<dependency>
+			<groupId>com.fifesoft</groupId>
+			<artifactId>languagesupport</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-cli</groupId>
+			<artifactId>commons-cli</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk16</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>wsdl4j</groupId>
+			<artifactId>wsdl4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>jaxen</groupId>
+			<artifactId>jaxen</artifactId>
+		</dependency>
+		<!-- End Soap Core requirements -->
+		<dependency>
+			<groupId>org.apache.directory.studio</groupId>
+			<artifactId>org.apache.commons.io</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.scilab.forge</groupId>
+			<artifactId>jlatexmath</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- Framework should come first for the dependency resolution priority. -->
+			<dependency>
+				<groupId>com.allegis</groupId>
+				<artifactId>seleniumFramework</artifactId>
+				<version>1.1.7-SNAPSHOT</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
+			<dependency>
+				<groupId>com.jayway.jsonpath</groupId>
+				<artifactId>json-path</artifactId>
+				<version>2.4.0</version>
+			</dependency>
+
+			<!-- Start Selenium requirements -->
+			<dependency>
+				<groupId>org.seleniumhq.selenium</groupId>
+				<artifactId>htmlunit-driver</artifactId>
+				<version>2.23.1</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<!-- End Selenium requirements -->
+			<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+			<dependency>
+				<groupId>com.googlecode.json-simple</groupId>
+				<artifactId>json-simple</artifactId>
+				<version>1.1.1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-core</artifactId>
+				<version>2.9.5</version>
+			</dependency>
+			<dependency>
+				<groupId>com.saucelabs</groupId>
+				<artifactId>sauce_java_common</artifactId>
+				<version>2.1.19</version>
+			</dependency>
+			<dependency>
+				<groupId>com.saucelabs</groupId>
+				<artifactId>sauce_junit</artifactId>
+				<version>2.1.19</version>
+			</dependency>
+			<dependency>
+				<groupId>com.saucelabs</groupId>
+				<artifactId>sauce_testng</artifactId>
+				<version>2.1.19</version>
+			</dependency>
+			<dependency>
+				<groupId>com.saucelabs.selenium</groupId>
+				<artifactId>sauce-ondemand-driver</artifactId>
+				<version>1.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.saucelabs.selenium</groupId>
+				<artifactId>selenium-client-factory</artifactId>
+				<version>1.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.saucelabs</groupId>
+				<artifactId>saucerest</artifactId>
+				<version>1.0.22</version>
+			</dependency>
+
+			<!-- End Sauce Labs requirements -->
+
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpcore</artifactId>
+				<version>4.4.4</version>
+			</dependency>
+			<dependency>
+				<groupId>net.sourceforge.htmlunit</groupId>
+				<artifactId>htmlunit-core-js</artifactId>
+				<version>2.17</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<!-- Should be excluded for conflicts with the hmlunit-driver which is 
+					more recent. -->
+				<groupId>net.sourceforge.htmlunit</groupId>
+				<artifactId>webdriver</artifactId>
+				<version>2.6</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>net.sourceforge.htmlunit</groupId>
+				<artifactId>htmlunit</artifactId>
+				<version>2.19</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<!-- End HTML Unit Driver requirements -->
+
+			<dependency>
+				<groupId>net.sourceforge.jexcelapi</groupId>
+				<artifactId>jxl</artifactId>
+				<version>2.6.12</version>
+			</dependency>
+
+
+			<dependency>
+				<groupId>com.jayway.restassured</groupId>
+				<artifactId>rest-assured</artifactId>
+				<version>2.4.0</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.codehaus.groovy</groupId>
+						<artifactId>groovy</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.codehaus.groovy</groupId>
+						<artifactId>groovy-xml</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.codehaus.groovy</groupId>
+						<artifactId>groovy-json</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<!-- End REST Core requirements -->
+
+			<!-- Start Soap Core requirements -->
+			<dependency>
+				<groupId>com.fifesoft</groupId>
+				<artifactId>languagesupport</artifactId>
+				<version>r795</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-cli</groupId>
+				<artifactId>commons-cli</artifactId>
+				<version>1.3</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bouncycastle</groupId>
+				<artifactId>bcprov-jdk16</artifactId>
+				<version>1.46</version>
+			</dependency>
+			<dependency>
+				<groupId>wsdl4j</groupId>
+				<artifactId>wsdl4j</artifactId>
+				<version>1.6.3</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-beanutils</groupId>
+				<artifactId>commons-beanutils</artifactId>
+				<version>1.9.2</version>
+			</dependency>
+			<dependency>
+				<groupId>jaxen</groupId>
+				<artifactId>jaxen</artifactId>
+				<version>1.1.6</version>
+			</dependency>
+			<!-- End Soap Core requirements -->
+			<dependency>
+				<groupId>org.apache.directory.studio</groupId>
+				<artifactId>org.apache.commons.io</artifactId>
+				<version>2.4</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scilab.forge</groupId>
+				<artifactId>jlatexmath</artifactId>
+				<version>1.0.4</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+</project>

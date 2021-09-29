@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:59 IST 2021
+commons-configuration2-2.2.pom>allegis-framework=
+commons-configuration2-2.2.jar>allegis-framework=
+commons-configuration2-2.2-sources.jar>allegis-framework=

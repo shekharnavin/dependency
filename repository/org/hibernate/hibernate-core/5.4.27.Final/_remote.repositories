@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:03:15 IST 2021
+hibernate-core-5.4.27.Final.jar>allegis-framework=
+hibernate-core-5.4.27.Final-sources.jar>allegis-framework=
+hibernate-core-5.4.27.Final.pom>allegis-framework=

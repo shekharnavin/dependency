@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:40 IST 2021
+aspectjrt-1.9.1.pom>allegis-framework=
+aspectjrt-1.9.1.jar>allegis-framework=
+aspectjrt-1.9.1-sources.jar>allegis-framework=

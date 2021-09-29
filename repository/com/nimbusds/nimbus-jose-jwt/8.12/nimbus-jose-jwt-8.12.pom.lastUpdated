@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 16:16:44 IST 2021
+ab35631e21212a99a19ae016b5b061574c04b977@default-allegis-framework-http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-release/.lastUpdated=1632826004441
+https\://repo.maven.apache.org/maven2/.lastUpdated=1632826004755
+http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-release/.error=Could not transfer artifact com.nimbusds\:nimbus-jose-jwt\:pom\:8.12 from/to allegis-framework (http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-release)\: jira-tst-node01.allegistest.com
+ab35631e21212a99a19ae016b5b061574c04b977@default-snapshots-http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-snapshot/.lastUpdated=1632826004446
+http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-snapshot/.error=Could not transfer artifact com.nimbusds\:nimbus-jose-jwt\:pom\:8.12 from/to snapshots (http\://jira-tst-node01.allegistest.com\:8081/artifactory/libs-snapshot)\: jira-tst-node01.allegistest.com

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:16 IST 2021
+saucerest-1.0.22.jar>allegis-framework=
+saucerest-1.0.22-sources.jar>allegis-framework=
+saucerest-1.0.22.pom>allegis-framework=

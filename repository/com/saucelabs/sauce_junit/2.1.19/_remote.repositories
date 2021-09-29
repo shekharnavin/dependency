@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:15 IST 2021
+sauce_junit-2.1.19-sources.jar>allegis-framework=
+sauce_junit-2.1.19.jar>allegis-framework=
+sauce_junit-2.1.19.pom>allegis-framework=

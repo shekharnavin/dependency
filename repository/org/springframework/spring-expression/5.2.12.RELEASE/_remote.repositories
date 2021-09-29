@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:03:18 IST 2021
+spring-expression-5.2.12.RELEASE.jar>allegis-framework=
+spring-expression-5.2.12.RELEASE.pom>allegis-framework=
+spring-expression-5.2.12.RELEASE-sources.jar>allegis-framework=

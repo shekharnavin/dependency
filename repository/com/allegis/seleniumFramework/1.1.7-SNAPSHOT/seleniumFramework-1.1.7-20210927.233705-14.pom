@@ -1,0 +1,248 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>seleniumFramework</artifactId>
+	<version>1.1.7-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>Allegis Automation Core Framework</name>
+
+	<parent>
+		<groupId>com.allegis</groupId>
+		<artifactId>allegis-automation-base</artifactId>
+		<version>1.0.16-SNAPSHOT</version>
+	</parent>
+
+	<properties>
+		<powermock.version>1.7.4</powermock.version>
+		<jacoco.version>0.8.2</jacoco.version>
+		<sonar.jacoco.reportPath>${project.basedir}/jacoco.exec</sonar.jacoco.reportPath>
+		<timestamp>${maven.build.timestamp}</timestamp>
+		<sonar.projectKey>${project.artifactId}:maintenance</sonar.projectKey>
+		<sonar.projectName>${project.name} (Maintenance)</sonar.projectName>
+		<sonar.projectVersion>${project.version}</sonar.projectVersion>
+		<sonar.login>7f2a5b1a45cd80cbe8314a75b5b5c81cf1c73066</sonar.login>
+		<jacoco.haltOnFailure>false</jacoco.haltOnFailure>
+	</properties>
+
+	<developers>
+		<developer>
+			<name>Amandeep Sooch</name>
+			<id>asooch</id>
+			<organization>Allegis Group</organization>
+			<organizationUrl>http://allegisselenium.allegistest.com/</organizationUrl>
+			<email>asooch@allegisgroup.com</email>
+			<timezone>-5</timezone>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<scm>
+		<developerConnection>scm:git:git@bitbucket.org:allegisqa/allegis-selenium-fwjar.git</developerConnection>
+	</scm>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<plugins>
+			<!-- Compiler plugin -->
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<release>11</release>
+				</configuration>
+			</plugin>
+			<!-- Generate javadoc jar -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<failOnError>false</failOnError>
+				</configuration>
+			</plugin>
+
+			<!-- Surefire plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M3</version>
+				<configuration>
+					<testFailureIgnore>true</testFailureIgnore>
+					<suiteXmlFiles>
+						<suiteXmlFile>${testNGSourceDirectory}/allegis/framework/unit.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.7</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifestEntries>
+							<Automatic-Module-Name>com.allegis.framework.selenium</Automatic-Module-Name>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.12</version>
+				<configuration>
+					<testFailureIgnore>true</testFailureIgnore>
+					<argLine>
+						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+					</argLine>
+					<!-- Commenting out testng xmls so that tests don't get run during the 
+						packaging of.jar -->
+					<!-- <suiteXmlFiles> <suiteXmlFile>${testNGSourceDirectory}/allegis/globalTestingXMLs/${xmlfile}</suiteXmlFile> 
+						</suiteXmlFiles> -->
+					<suiteXmlFiles>
+						<suiteXmlFile>${testNGSourceDirectory}/allegis/framework/unit.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<systemPropertyVariables>
+						<jenkinsOperatingSystem>${operatingSystem}</jenkinsOperatingSystem>
+						<jenkinsBrowser>${browser}</jenkinsBrowser>
+						<jenkinsBrowserSize>${browserSize}</jenkinsBrowserSize>
+						<jenkinsBrowserVersion>${browserVersion}</jenkinsBrowserVersion>
+						<jenkinsRunLocation>${runLocation}</jenkinsRunLocation>
+						<jenkinsProfileName>${profileName}</jenkinsProfileName>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.2</version>
+				<executions>
+					<execution>
+						<id>default-prepare-agent</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>default-report</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>default-check</id>
+						<phase>test</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<rule>
+									<element>CLASS</element>
+									<excludes>
+										<exclude>*Test</exclude>
+									</excludes>
+									<limits>
+										<limit>
+											<counter>LINE</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>85%</minimum>
+										</limit>
+									</limits>
+								</rule>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<!-- Dependencies -->
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.hsqldb/hsqldb -->
+		<dependency>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>2.4.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+			<version>1.18.16</version>
+		</dependency>
+		
+		<!-- Unit testing -->
+		<dependency>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-core</artifactId>
+			<version>3.9.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>2.28.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-module-testng</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-api-mockito2</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<!-- Must be on the classpath -->
+			<groupId>org.jacoco</groupId>
+			<artifactId>org.jacoco.agent</artifactId>
+			<classifier>runtime</classifier>
+			<version>${jacoco.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>4.2.0</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>*</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+</project>

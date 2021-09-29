@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:41 IST 2021
+httpclient-4.5.2.pom>allegis-framework=
+httpclient-4.5.2.jar>allegis-framework=
+httpclient-4.5.2-sources.jar>allegis-framework=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:38 IST 2021
+jcommander-1.72.pom>allegis-framework=
+jcommander-1.72-sources.jar>allegis-framework=
+jcommander-1.72.jar>allegis-framework=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:03:01 IST 2021
+json-schema-core-1.2.5.jar>allegis-framework=
+json-schema-core-1.2.5-sources.jar>allegis-framework=
+json-schema-core-1.2.5.pom>allegis-framework=

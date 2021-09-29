@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:37 IST 2021
+byte-buddy-1.8.15.jar>allegis-framework=
+byte-buddy-1.8.15-sources.jar>allegis-framework=
+byte-buddy-1.8.15.pom>allegis-framework=

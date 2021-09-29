@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:32 IST 2021
+guava-25.0-jre-sources.jar>allegis-framework=
+guava-25.0-jre.pom>allegis-framework=
+guava-25.0-jre.jar>allegis-framework=

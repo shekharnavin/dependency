@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:57 IST 2021
+curvesapi-1.06-sources.jar>allegis-framework=
+curvesapi-1.06.jar>allegis-framework=
+curvesapi-1.06.pom>allegis-framework=

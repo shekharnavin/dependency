@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:36 IST 2021
+selenium-remote-driver-3.14.0.jar>allegis-framework=
+selenium-remote-driver-3.14.0.pom>allegis-framework=
+selenium-remote-driver-3.14.0-sources.jar>allegis-framework=

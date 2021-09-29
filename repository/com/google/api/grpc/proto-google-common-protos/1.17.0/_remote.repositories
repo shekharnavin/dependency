@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:02:10 IST 2021
+proto-google-common-protos-1.17.0-sources.jar>allegis-framework=
+proto-google-common-protos-1.17.0.jar>allegis-framework=
+proto-google-common-protos-1.17.0.pom>allegis-framework=

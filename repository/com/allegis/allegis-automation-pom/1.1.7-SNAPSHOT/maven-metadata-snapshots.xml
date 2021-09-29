@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.allegis</groupId>
+  <artifactId>allegis-automation-pom</artifactId>
+  <version>1.1.7-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20210920.225706</timestamp>
+      <buildNumber>12</buildNumber>
+    </snapshot>
+    <lastUpdated>20210920225706</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.1.7-20210920.225706-12</value>
+        <updated>20210920225706</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

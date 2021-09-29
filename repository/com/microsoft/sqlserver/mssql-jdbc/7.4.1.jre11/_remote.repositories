@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 28 15:03:23 IST 2021
+mssql-jdbc-7.4.1.jre11-sources.jar>allegis-framework=
+mssql-jdbc-7.4.1.jre11.pom>allegis-framework=
+mssql-jdbc-7.4.1.jre11.jar>allegis-framework=
